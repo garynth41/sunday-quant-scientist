@@ -42,6 +42,7 @@ factor_values
 aligned_prices = prices.stack().reindex(factor_index).unstack()
 aligned_prices
 
+
 # Run Alphalens analysis
 factor_data_al = al.utils.get_clean_factor_and_forward_returns(
     factor=factor_values['momentum'],
